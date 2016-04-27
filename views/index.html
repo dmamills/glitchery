@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="filterize">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/skeleton.css"/>
+        <link rel="stylesheet" type="text/css" href="css/tachyons.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ng-modal.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <title>the glitchery</title>
+    </head>
+    <body>
+        <header>
+            <h3>the glitchery</h3>
+        </header>
+        <div class="glitchery-body">
+            <main class="glitchery-content">
+                <div class="canvas-container">
+                    <div id="putCanvasHere"></div> <!-- lol angular -->
+                </div>
+                <div class="timeline-container">
+                    <timeline-controls></timeline-controls>
+                    <timeline-preview></timeline-preview>
+                </div>
+            </main>
+            <nav class="glitchery-toolbox">
+                <tool-box></tool-box>
+            </nav>
+        </div>
+
+        <img style="display:none;"src="example.jpg" id="replaceMe"/>
+        <script src="js/vendor.js"></script>
+        <script src="js/filterize.js"></script>
+    </body>
+</html>

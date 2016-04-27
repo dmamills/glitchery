@@ -1,0 +1,11 @@
+<div class="timeline-controls">
+    <h4>animation</h4>
+    <p>Saved frames: <span ng-bind="frames.length"></span>
+    <ul class="unstyled">
+        <li><button ng-click="add()">add frame</button></li>
+        <li><button ng-click="loop()"><span ng-bind="!isPlaying ? 'start' : 'stop'"></span> loop</button></li>
+
+        <input type="range" min="100" max="10000" ng-model="interval" step="100"/>
+        <span ng-bind="interval | intervalSpeed"></span>
+    </ul>
+</div>

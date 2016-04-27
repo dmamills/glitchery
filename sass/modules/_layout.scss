@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+    font-family: $logo-font;
+    color: $white;
+    background-color: $pomegranate;
+
+    padding: 20px;
+}
+.glitchery-body {
+  display: flex;
+  flex: 1;
+}
+
+.glitchery-content {
+    flex:1;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    background-color: $white;
+}
+
+.glitchery-toolbox {
+    background-color: $white;
+    border-right: 2px solid $dark-grey;
+
+    max-height: 1024px;
+    overflow: scroll;
+    padding: 20px;
+    flex: 0 0 20em;
+    order: -1;
+}
+
+.canvas-container {
+    flex: 1;
+}
+
+.timeline-container {
+    background-color: darken($pomegranate, 10%);
+    color: $white;
+    display: flex;
+
+    .timeline-preview {
+        border: 1px solid black;
+        flex-grow: 2;
+    }   
+
+    .timeline-controls {
+        border: 1px solid black;
+        flex-grow: 2;
+
+    }   
+
+}
+
+.frame-container {
+    display:inline-flex;
+}
+
+
+
+

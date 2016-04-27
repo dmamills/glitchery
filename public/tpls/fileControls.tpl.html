@@ -1,0 +1,13 @@
+<h4>controls</h4>
+<ul class="unstyled">
+  <li><button ng-click="onReset()" >reset</button></li>
+  <li><button ng-click="onUndo()">undo</button></li>
+  <li><button ng-click="onSave()" >save still</button></li>
+  <li><button ng-click="toGif()" >save as gif</button></li>
+</ul>
+
+<modal-dialog show='dialogShown' dialog-title='Uploaded GIF'>
+    <img ng-src="/gif/{{uploadedGif}}.gif"/>
+    <br/>
+    <a ng-href="/gif/{{uploadedGif}}">Download Link</a>
+</modal-dialog>

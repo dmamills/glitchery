@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+header {
+  font-family: "Pacifico", cursive;
+  color: #FFF;
+  background-color: #c0392b;
+  padding: 20px; }
+
+.glitchery-body {
+  display: flex;
+  flex: 1; }
+
+.glitchery-content {
+  flex: 1;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  background-color: #FFF; }
+
+.glitchery-toolbox {
+  background-color: #FFF;
+  border-right: 2px solid #7f8c8d;
+  max-height: 1024px;
+  overflow: scroll;
+  padding: 20px;
+  flex: 0 0 20em;
+  order: -1; }
+
+.canvas-container {
+  flex: 1; }
+
+.timeline-container {
+  background-color: #962d22;
+  color: #FFF;
+  display: flex; }
+  .timeline-container .timeline-preview {
+    border: 1px solid black;
+    flex-grow: 2; }
+  .timeline-container .timeline-controls {
+    border: 1px solid black;
+    flex-grow: 2; }
+
+.frame-container {
+  display: inline-flex; }
